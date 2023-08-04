@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/Header.ejs")%>
+    <body>
+        <!-- Start Header -->
+        <%- include("./partials/nav.ejs")%>
+        <!-- End Header -->
+        <!-- start cart -->
+        <div class="cart">
+            <div class="container cart-page">
+                <p id="x1"></p>
+                <script type="text/javascript"> 
+                    var x = "Hello my name is " + localStorage.getItem("cart");
+                    document.getElementById("x1").innerHTML = x; 
+                </script> 
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Qunatity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <!-- 1 -->
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="/img/articles/3.png" alt="">
+                                <div>
+                                    <p>game articles</p>
+                                    <small id="x1">Price: $50.00</small>
+                                    <br>
+                                    <a href="#"><button>Remove</button></a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><p>1</p></td>
+                        <td>$50.00</td>
+                    </tr>
+                    <!-- 1 -->
+                    <!-- 2 -->
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="/img/articles/3.png" alt="">
+                                <div>
+                                    <p>game articles</p>
+                                    <small>Price: $50.00</small>
+                                    <br>
+                                    <a href="#"><button>Remove</button></a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><p>1</p></td>
+                        <td>$50.00</td>
+                    </tr>
+                    <!-- 2 -->
+                </table>
+                <div class="total">
+                    <table>
+                        <tr>
+                            <td>subtotal</td>
+                            <td>$200.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>$35.00</td>
+                        </tr>
+                        <tr class="last">
+                            <td>total</td>
+                            <td>$235.00</td>
+                        </tr>
+                        <tr aria-colspan="2">
+                            <td >
+                                <h1>CHECKOUT</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- End cart -->
+                                                <!-- Start Footer -->
+                                                <%- include("./partials/Footer.ejs")%>
+                                                <!-- End Footer -->
+        <!-- js -->
+        <script>
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+menu.onclick = () =>{
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open')
+}
+// up
+let span =document.querySelector('.up')
+window.onscroll =() =>{
+    // console.log(this.scrollY)
+    if(this.scrollY >= 1000){
+        span.classList.add('show')
+    }else{
+        span.classList.remove('show')
+    }
+}
+span.addEventListener('click',function(){
+    scroll({
+        top: 0,
+        behavior: "smooth"
+}) 
+    })
+//
+        </script>
+                <!-- js -->
+    </body>
+</html>

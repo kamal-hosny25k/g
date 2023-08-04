@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/Header.ejs")%>
+    <body>
+        <!-- Start Header -->
+        <%- include("./partials/nav.ejs")%>
+        <!-- End Header -->
+        <!-- Start Landing -->
+        <div class="landing">
+            <div class="container">
+                <div class="info">
+                    <h1>Game assets in the <Span>GDevelop Asset Store</span></h1>
+                    <p> Build your game by picking from hundreds of free and premium asset packs. </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Landing -->
+        <!-- Start Store -->
+        <div class="Store">
+            <div class="container">
+                <!-- 1 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 9.99</h4>
+                        <h3>Farming RPG Music Asset Pack 3</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button id="1b" class="addcard" onclick=myFunction1() >
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                            <script>
+                                function myFunction1() {
+                                    document.getElementById("1b");
+                                    if (localStorage.getItem("cart") == null ){
+                                        localStorage.setItem("cart", JSON.stringify({data:[]}));
+                                    }
+                                    oldData=JSON.parse(localStorage.getItem("cart"));
+                                    oldData.data.push({name:"Farming RPG Music Asset Pack 3",img:"/images/Store/thumbnail.png",price:"$ 9.99"})
+                                    localStorage.setItem("cart", JSON.stringify(oldData));
+                                }
+                                </script>
+                        </button>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <!-- 2 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_2.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 4.99</h4>
+                        <h3>Rogue Adventure Interior
+                            <br>ㅤ
+                        </h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button id="2b" class="addcard" onclick=myFunction2() >
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                            <script>
+                                function myFunction2() {
+                                    document.getElementById("2b");
+                                    if (localStorage.getItem("cart") == null ){
+                                        localStorage.setItem("cart", JSON.stringify({data:[]}));
+                                    }
+                                    oldData=JSON.parse(localStorage.getItem("cart"));
+                                    oldData.data.push({name:"Rogue Adventure Interior",img:"/images/Store/thumbnail_2.png",price:"$ 4.99"})
+                                    localStorage.setItem("cart", JSON.stringify(oldData));
+                                }
+                                </script>
+                        </button>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <!-- 3 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_3.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 4.99</h4>
+                        <h3>Fantasy Dreamland Winter Villa..
+                        </h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button id="3b" class="addcard" onclick=myFunction3() >
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                            <script>
+                                function myFunction3() {
+                                    document.getElementById("3b");
+                                    if (localStorage.getItem("cart") == null ){
+                                        localStorage.setItem("cart", JSON.stringify({data:[]}));
+                                    }
+                                    oldData=JSON.parse(localStorage.getItem("cart"));
+                                    oldData.data.push({name:"3",price:"$ 4.99"})
+                                    localStorage.setItem("cart", JSON.stringify(oldData));
+                                }
+                                </script>
+                        </button>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <!-- 4 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_4.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 7.99</h4>
+                        <h3>Gift Boxes <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <!-- 5 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_5.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 6.99</h4>
+                        <h3>Cyberpunk Neon World <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button id="5" class="addcard" onclick=myFunction() >
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                            <script>
+                                function myFunction() {
+                                   
+                                }
+                                </script>
+                        </button>
+                    
+                    </div>
+                </div>
+                <!-- 5 -->
+                <!-- 6 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_6.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 4.99</h4>
+                        <h3>Fantasy RPG Monsters 1 <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <!-- 7 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_7.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 6.99</h4>
+                        <h3>Flat Icon Pack <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <!-- 8 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_8.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 9.99</h4>
+                        <h3>Epic Medieval Music Asset Pack 5</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <!-- 9 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_9.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 4.99</h4>
+                        <h3>Fantasy Dreamland Caves <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <!-- 10 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_10.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 2.99</h4>
+                        <h3>Menu buttons <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <!-- 11 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_11.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 6.99</h4>
+                        <h3>Resource bars <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <!-- 12 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_12.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 14.99</h4>
+                        <h3>Multitouch joysticks <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <!-- 13 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_13.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 11.99</h4>
+                        <h3>GDevelop Platformer <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 13 -->
+                <!-- 14 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_14.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 0.99</h4>
+                        <h3>Settings UI <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 14 -->
+                <!-- 15 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_15.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 19.99</h4>
+                        <h3>Fantasy Dreamland Enemies 2<br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 15 -->
+                <!-- 16 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_16.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 8.99</h4>
+                        <h3>Fantasy Dreamland Village <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 16 -->
+                <!-- 17-->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_17.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 9.99</h4>
+                        <h3>Cute Casual Game UI <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 17 -->
+                <!-- 18 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_18.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 18.99</h4>
+                        <h3>SciFi Space Village Animals And Enemies <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 18 -->
+                <!-- 19 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_19.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 11.99</h4>
+                        <h3>Dungeon Castle <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 19 -->
+                <!-- 20 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_20.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 4.99</h4>
+                        <h3>Wesxdz SkullCup <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 20 -->
+                <!-- 21 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_21.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 4.99</h4>
+                        <h3>Fantasy RPG Monsters 3<br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 21 -->
+                <!-- 22 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_22.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 6.99</h4>
+                        <h3>Rogue Adventure Graveyard <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 22 -->
+                <!-- 23 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_23.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 7.99</h4>
+                        <h3>Casual Game UI Pack<br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 23 -->
+                <!-- 24 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="/images/Store/thumbnail_24.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Reviews</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>$ 9.99</h4>
+                        <h3>Pixel Dark Fantasy Level 3 <br>ㅤ</h3>
+                    </div>
+                    <div class="footer">
+                        <div class="love">
+                            <i class="fa fa-heart hearto"id="hearto"></i>
+                        </div>
+                        <button class="addcard">
+                            <p> add to card </p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- 24 -->
+            </div>
+        </div>
+        <!-- End Store -->
+                        <!-- Start Footer -->
+                        <%- include("./partials/Footer.ejs")%>
+                        <!-- End Footer -->
+        <!-- js -->
+        <script>
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+menu.onclick = () =>{
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open')
+}
+// up
+let span =document.querySelector('.up')
+window.onscroll =() =>{
+    // console.log(this.scrollY)
+    if(this.scrollY >= 1000){
+        span.classList.add('show')
+    }else{
+        span.classList.remove('show')
+    }
+}
+span.addEventListener('click',function(){
+    scroll({
+        top: 0,
+        behavior: "smooth"
+}) 
+    })
+//
+
+
+// 0 //
+let hearto = document.getElementsByClassName('hearto')[0];
+hearto.onclick =() =>{
+    if(hearto.style.color == "red"){
+        hearto.style.color = "grey"
+    }
+    else(
+        hearto.style.color = "red"
+    )
+};
+// 1 //
+let hearto1 = document.getElementsByClassName('hearto')[1];
+hearto1.onclick =() =>{
+    if(hearto1.style.color == "red"){
+        hearto1.style.color = "grey"
+    }
+    else(
+        hearto1.style.color = "red"
+    )
+};
+// 2 //
+let hearto2 = document.getElementsByClassName('hearto')[2];
+hearto2.onclick =() =>{
+    if(hearto2.style.color == "red"){
+        hearto2.style.color = "grey"
+    }
+    else(
+        hearto2.style.color = "red"
+    )
+};
+// 3 //
+let hearto3 = document.getElementsByClassName('hearto')[3];
+hearto3.onclick =() =>{
+    if(hearto3.style.color == "red"){
+        hearto3.style.color = "grey"
+    }
+    else(
+        hearto3.style.color = "red"
+    )
+};
+// 4 //
+let hearto4 = document.getElementsByClassName('hearto')[4];
+hearto4.onclick =() =>{
+    if(hearto4.style.color == "red"){
+        hearto4style.color = "grey"
+    }
+    else(
+        hearto4.style.color = "red"
+    )
+};
+// 5 //
+let hearto5 = document.getElementsByClassName('hearto')[5];
+hearto5.onclick =() =>{
+    if(hearto5.style.color == "red"){
+        hearto5.style.color = "grey"
+    }
+    else(
+        hearto5.style.color = "red"
+    )
+};
+// 6 //
+let hearto6 = document.getElementsByClassName('hearto')[6];
+hearto6.onclick =() =>{
+    if(hearto6.style.color == "red"){
+        hearto6.style.color = "grey"
+    }
+    else(
+        hearto6.style.color = "red"
+    )
+};
+// 7 //
+let hearto7 = document.getElementsByClassName('hearto')[7];
+hearto7.onclick =() =>{
+    if(hearto7.style.color == "red"){
+        hearto7.style.color = "grey"
+    }
+    else(
+        hearto7.style.color = "red"
+    )
+};
+//8//
+let hearto8 = document.getElementsByClassName('hearto')[8];
+hearto8.onclick =() =>{
+    if(hearto8.style.color == "red"){
+        hearto8.style.color = "grey"
+    }
+    else(
+        hearto8.style.color = "red"
+    )
+};
+//9//
+let hearto9= document.getElementsByClassName('hearto')[9];
+hearto9.onclick =() =>{
+    if(hearto9.style.color == "red"){
+        hearto9.style.color = "grey"
+    }
+    else(
+        hearto9.style.color = "red"
+    )
+};
+//10//
+let hearto10 = document.getElementsByClassName('hearto')[10];
+hearto10.onclick =() =>{
+    if(hearto10.style.color == "red"){
+        hearto10.style.color = "grey"
+    }
+    else(
+        hearto10.style.color = "red"
+    )
+};
+//11//
+let hearto11 = document.getElementsByClassName('hearto')[11];
+hearto11.onclick =() =>{
+    if(hearto11.style.color == "red"){
+        hearto11.style.color = "grey"
+    }
+    else(
+        hearto11.style.color = "red"
+    )
+};
+//12//
+let hearto12 = document.getElementsByClassName('hearto')[12];
+hearto12.onclick =() =>{
+    if(hearto12.style.color == "red"){
+        hearto12.style.color = "grey"
+    }
+    else(
+        hearto12.style.color = "red"
+    )
+};
+//13//
+let hearto13 = document.getElementsByClassName('hearto')[13];
+hearto13.onclick =() =>{
+    if(hearto13.style.color == "red"){
+        hearto13.style.color = "grey"
+    }
+    else(
+        hearto13.style.color = "red"
+    )
+};
+//14//
+let hearto14 = document.getElementsByClassName('hearto')[14];
+hearto14.onclick =() =>{
+    if(hearto14.style.color == "red"){
+        hearto14.style.color = "grey"
+    }
+    else(
+        hearto14.style.color = "red"
+    )
+};
+//15//
+let hearto15 = document.getElementsByClassName('hearto')[15];
+hearto15.onclick =() =>{
+    if(hearto15.style.color == "red"){
+        hearto15.style.color = "grey"
+    }
+    else(
+        hearto15.style.color = "red"
+    )
+};
+//16//
+let hearto16 = document.getElementsByClassName('hearto')[16];
+hearto16.onclick =() =>{
+    if(hearto16.style.color == "red"){
+        hearto16.style.color = "grey"
+    }
+    else(
+        hearto16.style.color = "red"
+    )
+};
+//17//
+let hearto17 = document.getElementsByClassName('hearto')[17];
+hearto17.onclick =() =>{
+    if(hearto17.style.color == "red"){
+        hearto17.style.color = "grey"
+    }
+    else(
+        hearto17.style.color = "red"
+    )
+};
+//18//
+let hearto18 = document.getElementsByClassName('hearto')[18];
+hearto18.onclick =() =>{
+    if(hearto18.style.color == "red"){
+        hearto18.style.color = "grey"
+    }
+    else(
+        hearto18.style.color = "red"
+    )
+};
+//19//
+let hearto19 = document.getElementsByClassName('hearto')[19];
+hearto19.onclick =() =>{
+    if(hearto19.style.color == "red"){
+        hearto19.style.color = "grey"
+    }
+    else(
+        hearto19.style.color = "red"
+    )
+};
+//20//
+let hearto20 = document.getElementsByClassName('hearto')[20];
+hearto20.onclick =() =>{
+    if(hearto20.style.color == "red"){
+        hearto20.style.color = "grey"
+    }
+    else(
+        hearto20.style.color = "red"
+    )
+};
+//21//
+let hearto21 = document.getElementsByClassName('hearto')[21];
+hearto21.onclick =() =>{
+    if(hearto21.style.color == "red"){
+        hearto21.style.color = "grey"
+    }
+    else(
+        hearto21.style.color = "red"
+    )
+};
+//22//
+let hearto22 = document.getElementsByClassName('hearto')[22];
+hearto22.onclick =() =>{
+    if(hearto22.style.color == "red"){
+        hearto22.style.color = "grey"
+    }
+    else(
+        hearto22.style.color = "red"
+    )
+}
+//23//
+let hearto23 = document.getElementsByClassName('hearto')[23];
+hearto23.onclick =() =>{
+    if(hearto23.style.color == "red"){
+        hearto23.style.color = "grey"
+    }
+    else(
+        hearto23.style.color = "red"
+    )
+}
+
+        </script>
+                <!-- js -->
+    </body>
+</html>
